@@ -1,38 +1,125 @@
 .App {
   text-align: center;
+ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+  width: 100vw;
+  height: 75vh;
+  background: url('https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg');
+  background-size: cover;
+  background-position-y: -200px;
+  position:absolute;
+}
+.dropdown{
+  display: none;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header{
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.start{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 30px;
+  color: rgb(250, 250, 111);
+  position:relative;
+  left: 250px;
+  height: 50px;
+  width:200px;
+  /* background-color: purple; */
+}
+
+.navbar {
+  position: relative;
+  color: white;
+  width:700px;
+  height: 50px;
+  /* background-color: red; */
+  top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  left: 40%;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.middle{
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-evenly;
+  top: 32%;
+  width: 700px;
+  height: 300px;
   color: white;
+  left: 25%;
 }
 
-.App-link {
-  color: #61dafb;
+.middle #Welcome {
+  font-family: serif;
+  font-size: 30px;
+  z-index: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.middle #Meet{
+  font-size: 60px;
+  position: relative;
+  bottom: 20%;
+  text-transform: uppercase;
 }
+
+.middle #Tell{
+height: 75px;
+width: 250px;
+background-color: #fed136;
+position: relative;
+bottom: 30%;
+left: 33%;
+}
+
+
+@media(max-width: 768px) {
+.start{
+  font-size: 20px;
+  position:relative;
+  left: 60px;
+}
+
+.navbar{
+  display: none;
+}
+.dropdown{
+  display: initial;
+  position: fixed;
+  right: 25%;
+  top: 15px;
+  
+}
+
+.mobile-menu {
+  display: flex;
+  height: 20vh;
+  width: 100vw;
+  color: white;
+  background: #3b3b3b;
+  position: fixed;
+  right: 100px;
+  top: 60px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items:  flex-start;
+  z-index: 2;
+}
+
+
+
+
+
+}
+
